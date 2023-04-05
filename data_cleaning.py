@@ -32,7 +32,7 @@ for index, row in games_2022.iterrows():
         print(index)
 
 games_complete['PTS_total'] = games_complete['PTS_home'] + games_complete['PTS_away']
-games_complete['OREB_total'] = games_complete['OREB_home'] + games_complete['OREB_away']
+games_complete['OREB_total'] = games_complete['OREB_home'] + games_complete['PTS_away']
 
 
 games_complete.to_csv('games_complete.csv', index=False)
