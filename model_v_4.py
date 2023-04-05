@@ -10,7 +10,7 @@ from sklearn.metrics import make_scorer
 from tqdm import tqdm
 
 
-def custom_scorer(y_true, y_pred, **kwargs):
+def custom_scorer(y_true, y_pred):
     pbar.update(1)
     return -mean_squared_error(y_true, y_pred)  # Return the negative value since GridSearchCV maximizes the score
 
@@ -122,7 +122,7 @@ visitor_team_id = 1610612761  # Toronto Raptors
 
 future_game_features = generate_game_features(games_data, home_team_id, visitor_team_id,
                                               n_games=depth_of_games).reshape(1, -1)
-# Scale the features using the provided scaler
+
 future_game_features_scaled = scaler.transform(future_game_features)
 future_game_prediction = y_scaler.inverse_transform(model.predict(future_game_features_scaled))
 
