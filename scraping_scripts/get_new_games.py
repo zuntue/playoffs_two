@@ -48,7 +48,7 @@ def main():
     t0 = time()
 
     # Update this line if the data directory is not in the parent directory
-    path = os.path.dirname(os.path.abspath(__file__)) + '/../data/'
+    path = os.path.dirname(os.path.abspath(__file__)) + '/../scraped_data/'
 
     # Get old games data to find out the last date that the script was executed
     try:
