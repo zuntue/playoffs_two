@@ -35,7 +35,7 @@ for index, row in games_2022.iterrows():
 
 
 games_results['PTS_total'] = games_results['PTS_home'] + games_results['PTS_away']
-games_results['OREB_total'] = games_results['OREB_home'] + games_results['PTS_away']
+games_results['OREB_total'] = games_results['OREB_home'] + games_results['OREB_away']
 
 # keep only certain columns
 columns_to_keep = ['GAME_DATE_EST', 'HOME_TEAM_ID', 'VISITOR_TEAM_ID', 'spread', 'PTS_total', 'OREB_total']

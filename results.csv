@@ -1,56 +1,56 @@
 Away,Home,Spread,Total,OREB
-Toronto Raptors,Charlotte Hornets,-20.0,220.0,126.0
-Milwaukee Bucks,Washington Wizards,-12.0,268.0,149.0
-Cleveland Cavaliers,Orlando Magic,-24.0,212.0,127.0
-Miami Heat,Detroit Pistons,-13.0,223.0,124.0
-Minnesota Timberwolves,Brooklyn Nets,-5.0,209.0,114.0
-Denver Nuggets,Houston Rockets,21.0,227.0,123.0
-Portland Trail Blazers,Memphis Grizzlies,10.0,228.0,117.0
-Sacramento Kings,New Orleans Pelicans,-18.0,224.0,130.0
-Boston Celtics,Philadelphia 76ers,2.0,204.0,107.0
-Atlanta Hawks,Chicago Bulls,-18.0,228.0,129.0
-Los Angeles Lakers,Utah Jazz,-2.0,268.0,141.0
-Oklahoma City Thunder,Golden State Warriors,11.0,261.0,144.0
-San Antonio Spurs,Phoenix Suns,21.0,209.0,109.0
-Brooklyn Nets,Detroit Pistons,-15.0,231.0,132.0
-New York Knicks,Indiana Pacers,-9.0,267.0,148.0
-Washington Wizards,Atlanta Hawks,18.0,250.0,128.0
-Toronto Raptors,Boston Celtics,19.0,223.0,115.0
-Chicago Bulls,Milwaukee Bucks,13.0,197.0,105.0
-Memphis Grizzlies,New Orleans Pelicans,7.0,269.0,139.0
-Sacramento Kings,Dallas Mavericks,4.0,242.0,126.0
-Los Angeles Lakers,Los Angeles Clippers,7.0,243.0,123.0
-Cleveland Cavaliers,Orlando Magic,-24.0,212.0,127.0
-Miami Heat,Philadelphia 76ers,-28.0,230.0,132.0
-Portland Trail Blazers,San Antonio Spurs,2.0,256.0,145.0
-Oklahoma City Thunder,Utah Jazz,-16.0,212.0,121.0
-Denver Nuggets,Phoenix Suns,4.0,234.0,122.0
-Houston Rockets,Charlotte Hornets,-3.0,221.0,119.0
-Miami Heat,Washington Wizards,6.0,222.0,120.0
-Detroit Pistons,Indiana Pacers,-7.0,237.0,131.0
-Orlando Magic,Brooklyn Nets,17.0,185.0,94.0
-Toronto Raptors,Boston Celtics,19.0,223.0,115.0
-Philadelphia 76ers,Atlanta Hawks,-5.0,267.0,140.0
-Memphis Grizzlies,Milwaukee Bucks,-23.0,251.0,148.0
-New York Knicks,New Orleans Pelicans,8.0,218.0,109.0
-Chicago Bulls,Dallas Mavericks,-3.0,227.0,122.0
-Golden State Warriors,Sacramento Kings,-22.0,216.0,137.0
-Phoenix Suns,Los Angeles Lakers,14.0,228.0,117.0
-Denver Nuggets,Utah Jazz,4.0,232.0,131.0
-Portland Trail Blazers,Los Angeles Clippers,11.0,261.0,138.0
-Minnesota Timberwolves,San Antonio Spurs,-20.0,282.0,161.0
-Atlanta Hawks,Boston Celtics,6.0,234.0,126.0
-Philadelphia 76ers,Brooklyn Nets,-29.0,239.0,144.0
-Detroit Pistons,Chicago Bulls,22.0,184.0,92.0
-Charlotte Hornets,Cleveland Cavaliers,-11.0,201.0,117.0
-Orlando Magic,Miami Heat,13.0,233.0,117.0
-Indiana Pacers,New York Knicks,-5.0,277.0,160.0
-Milwaukee Bucks,Toronto Raptors,16.0,226.0,112.0
-Houston Rockets,Washington Wizards,-5.0,223.0,127.0
-San Antonio Spurs,Dallas Mavericks,-21.0,255.0,146.0
-Sacramento Kings,Denver Nuggets,14.0,204.0,110.0
-Utah Jazz,Los Angeles Lakers,11.0,245.0,127.0
-New Orleans Pelicans,Minnesota Timberwolves,5.0,221.0,116.0
-Memphis Grizzlies,Oklahoma City Thunder,15.0,215.0,108.0
-Los Angeles Clippers,Phoenix Suns,-5.0,233.0,131.0
-Golden State Warriors,Portland Trail Blazers,-56.0,258.0,163.0
+Toronto Raptors,Charlotte Hornets,-20.0,220.0,16.0
+Milwaukee Bucks,Washington Wizards,-12.0,268.0,21.0
+Cleveland Cavaliers,Orlando Magic,-24.0,212.0,18.0
+Miami Heat,Detroit Pistons,-13.0,223.0,11.0
+Minnesota Timberwolves,Brooklyn Nets,-5.0,209.0,14.0
+Denver Nuggets,Houston Rockets,21.0,227.0,33.0
+Portland Trail Blazers,Memphis Grizzlies,10.0,228.0,21.0
+Sacramento Kings,New Orleans Pelicans,-18.0,224.0,20.0
+Boston Celtics,Philadelphia 76ers,2.0,204.0,19.0
+Atlanta Hawks,Chicago Bulls,-18.0,228.0,13.0
+Los Angeles Lakers,Utah Jazz,-2.0,268.0,17.0
+Oklahoma City Thunder,Golden State Warriors,11.0,261.0,32.0
+San Antonio Spurs,Phoenix Suns,21.0,209.0,24.0
+Brooklyn Nets,Detroit Pistons,-15.0,231.0,20.0
+New York Knicks,Indiana Pacers,-9.0,267.0,30.0
+Washington Wizards,Atlanta Hawks,18.0,250.0,24.0
+Toronto Raptors,Boston Celtics,19.0,223.0,25.0
+Chicago Bulls,Milwaukee Bucks,13.0,197.0,18.0
+Memphis Grizzlies,New Orleans Pelicans,7.0,269.0,23.0
+Sacramento Kings,Dallas Mavericks,4.0,242.0,29.0
+Los Angeles Lakers,Los Angeles Clippers,7.0,243.0,15.0
+Cleveland Cavaliers,Orlando Magic,-24.0,212.0,18.0
+Miami Heat,Philadelphia 76ers,-28.0,230.0,13.0
+Portland Trail Blazers,San Antonio Spurs,2.0,256.0,26.0
+Oklahoma City Thunder,Utah Jazz,-16.0,212.0,24.0
+Denver Nuggets,Phoenix Suns,4.0,234.0,16.0
+Houston Rockets,Charlotte Hornets,-3.0,221.0,21.0
+Miami Heat,Washington Wizards,6.0,222.0,26.0
+Detroit Pistons,Indiana Pacers,-7.0,237.0,19.0
+Orlando Magic,Brooklyn Nets,17.0,185.0,25.0
+Toronto Raptors,Boston Celtics,19.0,223.0,25.0
+Philadelphia 76ers,Atlanta Hawks,-5.0,267.0,17.0
+Memphis Grizzlies,Milwaukee Bucks,-23.0,251.0,22.0
+New York Knicks,New Orleans Pelicans,8.0,218.0,11.0
+Chicago Bulls,Dallas Mavericks,-3.0,227.0,15.0
+Golden State Warriors,Sacramento Kings,-22.0,216.0,28.0
+Phoenix Suns,Los Angeles Lakers,14.0,228.0,23.0
+Denver Nuggets,Utah Jazz,4.0,232.0,22.0
+Portland Trail Blazers,Los Angeles Clippers,11.0,261.0,20.0
+Minnesota Timberwolves,San Antonio Spurs,-20.0,282.0,21.0
+Atlanta Hawks,Boston Celtics,6.0,234.0,28.0
+Philadelphia 76ers,Brooklyn Nets,-29.0,239.0,23.0
+Detroit Pistons,Chicago Bulls,22.0,184.0,26.0
+Charlotte Hornets,Cleveland Cavaliers,-11.0,201.0,21.0
+Orlando Magic,Miami Heat,13.0,233.0,20.0
+Indiana Pacers,New York Knicks,-5.0,277.0,27.0
+Milwaukee Bucks,Toronto Raptors,16.0,226.0,14.0
+Houston Rockets,Washington Wizards,-5.0,223.0,26.0
+San Antonio Spurs,Dallas Mavericks,-21.0,255.0,21.0
+Sacramento Kings,Denver Nuggets,14.0,204.0,25.0
+Utah Jazz,Los Angeles Lakers,11.0,245.0,17.0
+New Orleans Pelicans,Minnesota Timberwolves,5.0,221.0,19.0
+Memphis Grizzlies,Oklahoma City Thunder,15.0,215.0,19.0
+Los Angeles Clippers,Phoenix Suns,-5.0,233.0,26.0
+Golden State Warriors,Portland Trail Blazers,-56.0,258.0,15.0
