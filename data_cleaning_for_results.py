@@ -146,21 +146,21 @@ for game in future_games:
         'Away': game['Away'],
         'Home': game['Home'],
         'Spread': matching_rows['spread'].iloc[0] if not matching_rows.empty else 0,
-        'PTS_total': matching_rows['PTS_total'].iloc[0] if not matching_rows.empty else 0,
-        'OREB_total': matching_rows['OREB_total'].iloc[0] if not matching_rows.empty else 0
+        'Total': matching_rows['PTS_total'].iloc[0] if not matching_rows.empty else 0,
+        'OREB': matching_rows['OREB_total'].iloc[0] if not matching_rows.empty else 0
     })
 
 for result in results:
     print(f"{result['Home']} vs {result['Away']}:")
     print(f"Spread: {result['Spread']}")
-    print(f"PTS_total: {result['PTS_total']}")
-    print(f"OREB_total: {result['OREB_total']}")
+    print(f"PTS_total: {result['Total']}")
+    print(f"OREB_total: {result['OREB']}")
     print("-------------------------------------")
 
 
 # Save predictions to CSV
 with open('results.csv', 'w', newline='') as csvfile:
-    fieldnames = ['Away', 'Home', 'Spread', 'PTS_total', 'OREB_total']
+    fieldnames = ['Away', 'Home', 'Spread', 'Total', 'OREB']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     writer.writeheader()
