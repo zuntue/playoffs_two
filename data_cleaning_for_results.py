@@ -157,8 +157,8 @@ for game in future_games:
         matching_row['Away'] = game['Away']
         matching_row['Date'] = game['Date']
 
-        # Append the matching row to future_games_df
-        future_games_df = future_games_df.append(matching_row)
+        # Concatenate the matching row to future_games_df
+        future_games_df = pd.concat([future_games_df, matching_row], ignore_index=True)
 
 results = []
 

@@ -2,7 +2,7 @@ import csv
 
 # Read the results from the CSV file
 results = []
-with open('results_with_mistakes.csv', 'r') as csvfile:
+with open('pubished_results_with_mistakes.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     next(csvreader)  # Skip the header row
     for row in csvreader:
@@ -33,6 +33,10 @@ print("MAE for Spread: 13.298504727272729",
 
 print("\nEstimated standings: ")
 print("MAE for Spread: 11th place | MAE for Total: 9th place | MAE for OREB: 9th place | Out of a total 17 teams")
+
+# OUTSTANDING ISSUES:
+# 1. the published results are wrong
+# 2. the method of calculating MAE is wrong
 
 # Note:
 # I used RMSE as the loss function, and even though I scaled all three of the stats down, the scaled values for OREB

@@ -9,7 +9,7 @@ def read_csv(file_name):
     return data
 
 # Read the data from the two CSV files
-results_with_mistakes = read_csv('results_with_mistakes.csv')[1:]  # [1:] to exclude the header
+results_with_mistakes = read_csv('pubished_results_with_mistakes.csv')[1:]  # [1:] to exclude the header
 correct_results = read_csv('results.csv')[1:]
 
 # Check if the CSV files have the same number of rows
