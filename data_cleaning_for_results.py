@@ -43,62 +43,67 @@ games_results = games_results.drop(columns=[col for col in games_results.columns
 
 games_results.to_csv('games_results.csv', index=False)
 
-future_games = [{'Home': 'Charlotte Hornets', 'Away': 'Toronto Raptors'},
-                {'Home': 'Washington Wizards', 'Away': 'Milwaukee Bucks'},
-                {'Home': 'Orlando Magic', 'Away': 'Cleveland Cavaliers'},
-                {'Home': 'Detroit Pistons', 'Away': 'Miami Heat'},
-                {'Home': 'Brooklyn Nets', 'Away': 'Minnesota Timberwolves'},
-                {'Home': 'Houston Rockets', 'Away': 'Denver Nuggets'},
-                {'Home': 'Memphis Grizzlies', 'Away': 'Portland Trail Blazers'},
-                {'Home': 'New Orleans Pelicans', 'Away': 'Sacramento Kings'},
-                {'Home': 'Philadelphia 76ers', 'Away': 'Boston Celtics'},
-                {'Home': 'Chicago Bulls', 'Away': 'Atlanta Hawks'},
-                {'Home': 'Utah Jazz', 'Away': 'Los Angeles Lakers'},
-                {'Home': 'Golden State Warriors', 'Away': 'Oklahoma City Thunder'},
-                {'Home': 'Phoenix Suns', 'Away': 'San Antonio Spurs'},
-                {'Home': 'Detroit Pistons', 'Away': 'Brooklyn Nets'},
-                {'Home': 'Indiana Pacers', 'Away': 'New York Knicks'},
-                {'Home': 'Atlanta Hawks', 'Away': 'Washington Wizards'},
-                {'Home': 'Boston Celtics', 'Away': 'Toronto Raptors'},
-                {'Home': 'Milwaukee Bucks', 'Away': 'Chicago Bulls'},
-                {'Home': 'New Orleans Pelicans', 'Away': 'Memphis Grizzlies'},
-                {'Home': 'Dallas Mavericks', 'Away': 'Sacramento Kings'},
-                {'Home': 'Los Angeles Clippers', 'Away': 'Los Angeles Lakers'},
-                {'Home': 'Orlando Magic', 'Away': 'Cleveland Cavaliers'},
-                {'Home': 'Philadelphia 76ers', 'Away': 'Miami Heat'},
-                {'Home': 'San Antonio Spurs', 'Away': 'Portland Trail Blazers'},
-                {'Home': 'Utah Jazz', 'Away': 'Oklahoma City Thunder'},
-                {'Home': 'Phoenix Suns', 'Away': 'Denver Nuggets'},
-                {'Home': 'Charlotte Hornets', 'Away': 'Houston Rockets'},
-                {'Home': 'Washington Wizards', 'Away': 'Miami Heat'},
-                {'Home': 'Indiana Pacers', 'Away': 'Detroit Pistons'},
-                {'Home': 'Brooklyn Nets', 'Away': 'Orlando Magic'},
-                {'Home': 'Boston Celtics', 'Away': 'Toronto Raptors'},
-                {'Home': 'Atlanta Hawks', 'Away': 'Philadelphia 76ers'},
-                {'Home': 'Milwaukee Bucks', 'Away': 'Memphis Grizzlies'},
-                {'Home': 'New Orleans Pelicans', 'Away': 'New York Knicks'},
-                {'Home': 'Dallas Mavericks', 'Away': 'Chicago Bulls'},
-                {'Home': 'Sacramento Kings', 'Away': 'Golden State Warriors'},
-                {'Home': 'Los Angeles Lakers', 'Away': 'Phoenix Suns'},
-                {'Home': 'Utah Jazz', 'Away': 'Denver Nuggets'},
-                {'Home': 'Los Angeles Clippers', 'Away': 'Portland Trail Blazers'},
-                {'Home': 'San Antonio Spurs', 'Away': 'Minnesota Timberwolves'},
-                {'Home': 'Boston Celtics', 'Away': 'Atlanta Hawks'},
-                {'Home': 'Brooklyn Nets', 'Away': 'Philadelphia 76ers'},
-                {'Home': 'Chicago Bulls', 'Away': 'Detroit Pistons'},
-                {'Home': 'Cleveland Cavaliers', 'Away': 'Charlotte Hornets'},
-                {'Home': 'Miami Heat', 'Away': 'Orlando Magic'},
-                {'Home': 'New York Knicks', 'Away': 'Indiana Pacers'},
-                {'Home': 'Toronto Raptors', 'Away': 'Milwaukee Bucks'},
-                {'Home': 'Washington Wizards', 'Away': 'Houston Rockets'},
-                {'Home': 'Dallas Mavericks', 'Away': 'San Antonio Spurs'},
-                {'Home': 'Denver Nuggets', 'Away': 'Sacramento Kings'},
-                {'Home': 'Los Angeles Lakers', 'Away': 'Utah Jazz'},
-                {'Home': 'Minnesota Timberwolves', 'Away': 'New Orleans Pelicans'},
-                {'Home': 'Oklahoma City Thunder', 'Away': 'Memphis Grizzlies'},
-                {'Home': 'Phoenix Suns', 'Away': 'Los Angeles Clippers'},
-                {'Home': 'Portland Trail Blazers', 'Away': 'Golden State Warriors'}
-                ]
+# Sort the DataFrame by the 'GAME_DATE_EST' and 'index' columns in ascending order
+games_results_sorted = games_results.sort_values(by=['GAME_DATE_EST'])
+
+
+future_games = [
+    {'Date': '2023-04-04', 'Away': 'Toronto Raptors', 'Home': 'Charlotte Hornets'},
+    {'Date': '2023-04-04', 'Away': 'Milwaukee Bucks', 'Home': 'Washington Wizards'},
+    {'Date': '2023-04-04', 'Away': 'Cleveland Cavaliers', 'Home': 'Orlando Magic'},
+    {'Date': '2023-04-04', 'Away': 'Miami Heat', 'Home': 'Detroit Pistons'},
+    {'Date': '2023-04-04', 'Away': 'Minnesota Timberwolves', 'Home': 'Brooklyn Nets'},
+    {'Date': '2023-04-04', 'Away': 'Denver Nuggets', 'Home': 'Houston Rockets'},
+    {'Date': '2023-04-04', 'Away': 'Portland Trail Blazers', 'Home': 'Memphis Grizzlies'},
+    {'Date': '2023-04-04', 'Away': 'Sacramento Kings', 'Home': 'New Orleans Pelicans'},
+    {'Date': '2023-04-04', 'Away': 'Boston Celtics', 'Home': 'Philadelphia 76ers'},
+    {'Date': '2023-04-04', 'Away': 'Atlanta Hawks', 'Home': 'Chicago Bulls'},
+    {'Date': '2023-04-04', 'Away': 'Los Angeles Lakers', 'Home': 'Utah Jazz'},
+    {'Date': '2023-04-04', 'Away': 'Oklahoma City Thunder', 'Home': 'Golden State Warriors'},
+    {'Date': '2023-04-04', 'Away': 'San Antonio Spurs', 'Home': 'Phoenix Suns'},
+    {'Date': '2023-04-05', 'Away': 'Brooklyn Nets', 'Home': 'Detroit Pistons'},
+    {'Date': '2023-04-05', 'Away': 'New York Knicks', 'Home': 'Indiana Pacers'},
+    {'Date': '2023-04-05', 'Away': 'Washington Wizards', 'Home': 'Atlanta Hawks'},
+    {'Date': '2023-04-05', 'Away': 'Toronto Raptors', 'Home': 'Boston Celtics'},
+    {'Date': '2023-04-05', 'Away': 'Chicago Bulls', 'Home': 'Milwaukee Bucks'},
+    {'Date': '2023-04-05', 'Away': 'Memphis Grizzlies', 'Home': 'New Orleans Pelicans'},
+    {'Date': '2023-04-05', 'Away': 'Sacramento Kings', 'Home': 'Dallas Mavericks'},
+    {'Date': '2023-04-05', 'Away': 'Los Angeles Lakers', 'Home': 'Los Angeles Clippers'},
+    {'Date': '2023-04-06', 'Away': 'Cleveland Cavaliers', 'Home': 'Orlando Magic'},
+    {'Date': '2023-04-06', 'Away': 'Miami Heat', 'Home': 'Philadelphia 76ers'},
+    {'Date': '2023-04-06', 'Away': 'Portland Trail Blazers', 'Home': 'San Antonio Spurs'},
+    {'Date': '2023-04-06', 'Away': 'Oklahoma City Thunder', 'Home': 'Utah Jazz'},
+    {'Date': '2023-04-06', 'Away': 'Denver Nuggets', 'Home': 'Phoenix Suns'},
+    {'Date': '2023-04-07', 'Away': 'Houston Rockets', 'Home': 'Charlotte Hornets'},
+    {'Date': '2023-04-07', 'Away': 'Miami Heat', 'Home': 'Washington Wizards'},
+    {'Date': '2023-04-07', 'Away': 'Detroit Pistons', 'Home': 'Indiana Pacers'},
+    {'Date': '2023-04-07', 'Away': 'Orlando Magic', 'Home': 'Brooklyn Nets'},
+    {'Date': '2023-04-07', 'Away': 'Toronto Raptors', 'Home': 'Boston Celtics'},
+    {'Date': '2023-04-07', 'Away': 'Philadelphia 76ers', 'Home': 'Atlanta Hawks'},
+    {'Date': '2023-04-07', 'Away': 'Memphis Grizzlies', 'Home': 'Milwaukee Bucks'},
+    {'Date': '2023-04-07', 'Away': 'New York Knicks', 'Home': 'New Orleans Pelicans'},
+    {'Date': '2023-04-07', 'Away': 'Chicago Bulls', 'Home': 'Dallas Mavericks'},
+    {'Date': '2023-04-07', 'Away': 'Golden State Warriors', 'Home': 'Sacramento Kings'},
+    {'Date': '2023-04-07', 'Away': 'Phoenix Suns', 'Home': 'Los Angeles Lakers'},
+    {'Date': '2023-04-08', 'Away': 'Denver Nuggets', 'Home': 'Utah Jazz'},
+    {'Date': '2023-04-08', 'Away': 'Portland Trail Blazers', 'Home': 'Los Angeles Clippers'},
+    {'Date': '2023-04-08', 'Away': 'Minnesota Timberwolves', 'Home': 'San Antonio Spurs'},
+    {'Date': '2023-04-09', 'Away': 'Atlanta Hawks', 'Home': 'Boston Celtics'},
+    {'Date': '2023-04-09', 'Away': 'Philadelphia 76ers', 'Home': 'Brooklyn Nets'},
+    {'Date': '2023-04-09', 'Away': 'Detroit Pistons', 'Home': 'Chicago Bulls'},
+    {'Date': '2023-04-09', 'Away': 'Charlotte Hornets', 'Home': 'Cleveland Cavaliers'},
+    {'Date': '2023-04-09', 'Away': 'Orlando Magic', 'Home': 'Miami Heat'},
+    {'Date': '2023-04-09', 'Away': 'Indiana Pacers', 'Home': 'New York Knicks'},
+    {'Date': '2023-04-09', 'Away': 'Milwaukee Bucks', 'Home': 'Toronto Raptors'},
+    {'Date': '2023-04-09', 'Away': 'Houston Rockets', 'Home': 'Washington Wizards'},
+    {'Date': '2023-04-09', 'Away': 'San Antonio Spurs', 'Home': 'Dallas Mavericks'},
+    {'Date': '2023-04-09', 'Away': 'Sacramento Kings', 'Home': 'Denver Nuggets'},
+    {'Date': '2023-04-09', 'Away': 'Utah Jazz', 'Home': 'Los Angeles Lakers'},
+    {'Date': '2023-04-09', 'Away': 'New Orleans Pelicans', 'Home': 'Minnesota Timberwolves'},
+    {'Date': '2023-04-09', 'Away': 'Memphis Grizzlies', 'Home': 'Oklahoma City Thunder'},
+    {'Date': '2023-04-09', 'Away': 'Los Angeles Clippers', 'Home': 'Phoenix Suns'},
+    {'Date': '2023-04-09', 'Away': 'Golden State Warriors', 'Home': 'Portland Trail Blazers'},
+    ]
 
 team_name_to_id = {
     'Atlanta Hawks': 1610612737,
@@ -133,21 +138,38 @@ team_name_to_id = {
     'Washington Wizards': 1610612764
 }
 
-# Predictions for the future games
-results = []
+# Create a new DataFrame with the same columns as games_results_sorted plus the 'Home', 'Away', and 'Date' columns
+future_games_df = pd.DataFrame(columns=games_results_sorted.columns.tolist() + ['Home', 'Away', 'Date'])
 
+# Iterate through the future_games list to populate the future_games_df DataFrame
 for game in future_games:
     home_team_id = team_name_to_id[game['Home']]
     away_team_id = team_name_to_id[game['Away']]
 
-    matching_rows = games_results[(games_results['HOME_TEAM_ID'] == home_team_id) & (games_results['VISITOR_TEAM_ID'] == away_team_id)]
+    # Find the matching row in games_results_sorted based on the team IDs and the game date
+    matching_row = games_results_sorted.loc[(games_results_sorted['HOME_TEAM_ID'] == home_team_id) &
+                                            (games_results_sorted['VISITOR_TEAM_ID'] == away_team_id) &
+                                            (games_results_sorted['GAME_DATE_EST'] == game['Date'])].copy()
 
+    if not matching_row.empty:
+        # Set the Home, Away, and Date columns
+        matching_row['Home'] = game['Home']
+        matching_row['Away'] = game['Away']
+        matching_row['Date'] = game['Date']
+
+        # Append the matching row to future_games_df
+        future_games_df = future_games_df.append(matching_row)
+
+results = []
+
+# Iterate through the future_games_df DataFrame to create the results list
+for index, row in future_games_df.iterrows():
     results.append({
-        'Away': game['Away'],
-        'Home': game['Home'],
-        'Spread': matching_rows['spread'].iloc[0] if not matching_rows.empty else 0,
-        'Total': matching_rows['PTS_total'].iloc[0] if not matching_rows.empty else 0,
-        'OREB': matching_rows['OREB_total'].iloc[0] if not matching_rows.empty else 0
+        'Away': row['Away'],
+        'Home': row['Home'],
+        'Spread': row['spread'],
+        'Total': row['PTS_total'],
+        'OREB': row['OREB_total']
     })
 
 for result in results:
@@ -158,7 +180,7 @@ for result in results:
     print("-------------------------------------")
 
 
-# Save predictions to CSV
+# Save results to CSV
 with open('results.csv', 'w', newline='') as csvfile:
     fieldnames = ['Away', 'Home', 'Spread', 'Total', 'OREB']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)

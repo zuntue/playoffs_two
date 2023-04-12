@@ -2,7 +2,7 @@ import csv
 
 # Read the results from the CSV file
 results = []
-with open('results.csv', 'r') as csvfile:
+with open('results_with_mistakes.csv', 'r') as csvfile:
     csvreader = csv.reader(csvfile)
     next(csvreader)  # Skip the header row
     for row in csvreader:
@@ -25,9 +25,11 @@ print("MAE for Spread:", mae_spread)
 print("MAE for Total:", mae_total)
 print("MAE for OREB:", mae_oreb)
 
-print("\nMAE for Spread: 2nd place | MAE for Total: 1st place | MAE for OREB: 9th place | Out of a total 17 teams")
-print("Note about MAE for Spread: Maybe should be 1st place too, the MAE for spread for team 11 (the 1st place team) "
-      "is very suspicious.")
+print("\nMAE for Spread: 13.298504727272729",
+"\nMAE for Total: 17.700591818181824",
+"\nMAE for OREB: 4.291665890909091")
+
+print("\nMAE for Spread: 11th place | MAE for Total: 1st place | MAE for OREB: 9th place | Out of a total 17 teams")
 
 # Note: I think I know why my predictions for OREB was significantly worse than my predictions for Spread and Total
 # I think this is because I used RMSE as the loss function, and even though I scaled all three of the stats down,
