@@ -28,3 +28,12 @@ print("MAE for OREB:", mae_oreb)
 print("\nMAE for Spread: 2nd place | MAE for Total: 1st place | MAE for OREB: 9th place | Out of a total 17 teams")
 print("Note about MAE for Spread: Maybe should be 1st place too, the MAE for spread for team 11 (the 1st place team) "
       "is very suspicious.")
+
+# Note: I think I know why my predictions for OREB was significantly worse than my predictions for Spread and Total
+# I think this is because I used RMSE as the loss function, and even though I scaled all three of the stats down,
+# the scaled values for OREB will still have lower RMSE because they will still have been smaller, so the model will not
+# prioritize fitting to them.
+
+# If I want my predictions to be better (potentially WAY better) I should have made a separate model for each stat, this
+# would allow for the grid search for hyperparameters to tune the hyperparameters for each stat, and also tune the model
+# as aggressively as possible for each stat.
